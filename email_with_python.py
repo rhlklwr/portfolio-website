@@ -24,3 +24,9 @@ def email_sent(email_object_to_sent):
         smtp.starttls()
         smtp.login("emailwithpython8@gmail.com", 'ckyolvyreghabjoa')
         smtp.send_message(email_object_to_sent)
+
+
+if __name__ == "__main__":
+    data = "kalwar.rahul@gmail.com"
+    email = email_body(data)
+    email_sent(email)
