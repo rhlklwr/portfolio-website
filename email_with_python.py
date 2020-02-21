@@ -12,7 +12,7 @@ def email_body(data):
         "Please find my resume in attached document.\n\n"
         "Regards,\n"
         "Rahul Kalwar")
-    with open('./static/resume.pdf', 'rb') as content_file:
+    with open('resume.pdf', 'rb') as content_file:
         content = content_file.read()
         email.add_attachment(content, maintype='application/pdf', subtype='pdf', filename='resume.pdf')
     return email
