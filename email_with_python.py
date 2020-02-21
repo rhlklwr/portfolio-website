@@ -8,7 +8,7 @@ def email_body(data):
     email['to'] = data
     email['subject'] = 'Resume'
     email.set_content(
-        "Hello Dear\n\n"
+        "Hello,\n\n"
         "Please find my resume in attached document.\n\n"
         "Regards,\n"
         "Rahul Kalwar")
